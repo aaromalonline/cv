@@ -53,17 +53,18 @@
 
 %==== Profile ====%
 \vspace*{-10pt}
+\vspace*{6mm}
 \begin{center}
     {\Huge \textbf{Aaromal A.}}\\
     \vspace{8pt}
     Kochi, India $\cdot$ aaromalonline@gmail.com $\cdot$ \href{https://www.linkedin.com/in/aaromalonline/}{https://www.linkedin.com/in/aaromalonline/} \\
     \vspace{6pt}
-    Self-taught Programmer $\cdot$ FOSS (GNU/Linux) $\cdot$ Electronics Engineering
+    Self-taught Programmer $\cdot$ FOSS \& Systems Software $\cdot$ Electronics Engineering
 \end{center}
 \vspace*{-8pt}
 
 %==== Education ====%
-\vspace*{8mm}
+\vspace*{9mm}
 \header{Education}
 \textbf{\href{https://www.cbse.gov.in/}{Central Board of Secondary Education (CBSE)}} \hfill Kerala, 2022 -- 2024\\
 \textit{Higher Secondary Education, Mathematics and Computer Science} \hfill Grade: 94.6\%\\
@@ -97,22 +98,23 @@
 \textbf{\href{https://liberate-atcs.vercel.app/}{Liberate:ATCS - Adaptive Typing \& Control System}} \hfill \textit{Feb 2025 - Sep 2025}\\
 {\sl ADXL345, TCRT5000 IR, ESP32, C++, Python, Arduino IDE}
 \begin{itemize} \itemsep 1pt
-    \item Implimented ADXL345 accelerometer (also TCTRT5000 IR sensor) as input modules to record muscle twitches as 3-axis accelerations, which are encoded into binary clicks using baseline calibration and filtering algorithms.
-    \item Data is sent serially/wirelessly via ESP32 to the Python application using I2C, where the user can control a keyboard interface using the decoded twitch clicks.
-    \item The PyQt5 interface provides a moving highlight bar which spans across the rows of a adaptive keyboard interface (incl QWERTY, SOS, Mobility, Speak Keys), allowing selection of rows and keys through muscle twitches.
+    \item Implimented \textbf{ADXL345 accelerometer} (also \textbf{TCTRT5000 IR sensor}) as input modules to record muscle twitches as 3-axis accelerations, which are encoded into binary clicks using baseline calibration and filtering algorithms.
+    \item Data is sent serially/wirelessly via ESP32 to the \textbf{Python application} using I2C, where the user can control a keyboard interface using the decoded twitch clicks.
+    \item The \textbf{PyQt5 interface} provides a moving highlight bar which spans across the rows of a adaptive keyboard interface (incl QWERTY, SOS, Mobility, Speak Keys), allowing selection of rows and keys through muscle twitches.
     \item  The decoded twitch signals can be used for various applications incl communication, mobility (used to move wheelchair in addition to a motor-contolller) etc.
     \item Received participation recognition at the \textbf{2025 SSCS Arduino Content} and demonstrated the prototype on various local hardware hackathon panels.
 \end{itemize}
 \vspace*{2mm}
 \newpage
 
+\vspace*{15mm}
 \href{https://github.com/aaromalonline/cardiokey}{\textbf{CardioKey (ECGID) - Analog ECG Acquisition \& Biometrics}} \hfill \textit{Feb 2026 - Present}\\
 {\sl AD620, ESP32, Python/MATLAB, Scikit-learn}
 \begin{itemize} \itemsep 1pt
-    \item Engineered an analog front-end using the AD620 instrumentation amplifier to acquire low-amplitude (~1mV) heart signals.
-    \item Implemented a P-QRS-T complex extraction pipeline using a 16-bit ADC (ADS1115) and ESP32 for digital signal processing.
-    \item Utilized Principal Component Analysis (PCA) to compress 250-point cardiac windows into 30-point biometric "signatures".
-    \item Achieved a 96\% identification accuracy using Linear Discriminant Analysis (LDA) and majority vote classifiers.
+    \item Engineered an \textbf{analog front-end} using the AD620 instrumentation amplifier and filter stages (Right-leg drive, Notch, butterworth) to acquire low-amplitude (~1mV) heart signals amplified 1000x in ~V range using amplifier stages.
+    \item Digitally sampled the analog out in 300-500 Hz, 16 bit precision using 16 bit ADC(ADS1115) with DC offset circuit (Clamper) and Arduino UNO as a data pipe to the processing computer.
+    \item Digital signal undergoes segmentation, fragment selection extracting P-QRS-T feature space, then Principal Component Analysis (PCA) to compress 250-point cardiac windows into 30-point biometric "signatures" (\textbf{Feature space formation \& reduction}).
+    \item Achieved a 96\% identification accuracy using Linear Discriminant Analysis (LDA) with Nearest Mean and majority vote classifiers on 30 point signature per cardiac cycle across rest and exercise data acquired from public database. (\textbf{Classification \& Identification})
     \item Featured inherent "Liveness Detection" to prevent biometric spoofing common in fingerprint or face ID systems.
 \end{itemize}
 \vspace*{2mm}
@@ -121,19 +123,25 @@
 {\sl Python, SQLite3}
 \begin{itemize}
     \item Developed a robust password management application utilizing \textbf{SQLite} for secure local database storage.
-    \item Implemented secure \textbf{User Authentication} and access control using advanced hashing techniques (\textbf{SHA256}) to protect sensitive user tables.
-    \item Integrated \textbf{Cryptographic protocols} like \textbf{AES} using cryptography.fernet to ensure that all stored passwords remain encrypted and secure from unauthorized access.
-    \item Designed an \textbf{Advanced Filtering and Search} interface, enabling users to efficiently sort and manage large lists of credentials.
+    \item Implemented secure \textbf{user authentication} and access control using advanced hashing techniques (\textbf{SHA256}) to protect sensitive user tables.
+    \item Integrated \textbf{cryptographic protocols} like \textbf{AES} using cryptography.fernet to ensure that all stored passwords remain encrypted and secure from unauthorized access.
+    \item Designed an \textbf{advanced filtering and search} interface, enabling users to efficiently sort and manage large lists of credentials.
     \item Built a \textbf{Data Portability} feature allowing users to navigate entries and export/import entire password databases to a single file.
 \end{itemize}
 \vspace*{2mm}
 
-\href{https://github.com/aaromalonline/truevote}{\textbf{Truevote: Digital Voting System}} \hfill {\sl C++, Qt, SHA256 Hashing, CMake} \\
-Secure e-voting replacement for EVMs using OOP principles and SHA256 hashing to ensure data integrity.
-
-\vspace*{5mm}
-
+\href{https://github.com/aaromalonline/truevote}{\textbf{Truevote - Digital Voting System}} \hfill \textit{May 2025}\\
+{\sl C++, Qt, SHA256 Hashing, CMake}
+\begin{itemize}
+    \item Developed a cross-platform file based d-voting application using \textbf{C++ and Qt} to replace the electronic interface with digital one with more features aiming for a remote interface in future using server-client architecture.
+    \item Engineered an OOP-based \textbf{voter-admin architecture} creating seperate admin and voter panels to create/start poll, register voters, authentication and record votes in csv files, there by automating vote counting from csv file (\textbf{C++ file handling}).
+    \item Implemented \textbf{SHA-256 cryptographic hashing} for user authentication.
+    \item Built an automated \textbf{build-and-run workflow} using \textbf{CMake and Makefiles} for Linux-based systems.
+\end{itemize}
+\vspace*{6mm}
+\newpage
 %==== Experience ====%
+\vspace*{15mm}
 \header{Experience}
 \textbf{Software Intern} \hfill \textit{Mar 2025 -- Jul 2025} \\
 \textit{\href{https://roverchallenge.eu/team/horizon-2024/}{Horizon Mars Rover Team, CUSAT}} \hfill \textit{Kochi, India}
@@ -156,8 +164,8 @@ Secure e-voting replacement for EVMs using OOP principles and SHA256 hashing to 
 
 \header{Technical Skills \& Certifications}
 \begin{itemize} \itemsep 1pt
-    \item \textbf{Languages:} Proficient in \textbf{Python} (NumPy, SciPy, Matplotlib, Seaborn, Scikit-learn, Pandas, OpenCV, Requests, Selenium, SQLite), \textbf{C/C++}, HTML/CSS, JavaScript, Bash, SQL, \LaTeX\, and Verilog.
-    \item \textbf{Tools \& Frameworks:} \textbf{ROS 2 Humble} (Basic Nodes), \textbf{Qt}, \textbf{Arduino} Framework, \textbf{LTspice}, \textbf{Xilinx Vivado}, Proteus, and \textbf{MATLAB \& Simulink} (Basics).
+    \item \textbf{Languages:} Proficient in \textbf{Python} (NumPy, SciPy, Matplotlib, Seaborn, Scikit-learn, Pandas, OpenCV, Requests, Selenium, SQLite), \textbf{C/C++}, \textbf{x86 asm}, HTML/CSS, JS, Bash (basic scripting), SQL, \LaTeX\, and Verilog.
+    \item \textbf{Tools \& Frameworks:} \textbf{ROS 2 Humble} (Basic Nodes), \textbf{Qt}, \textbf{Arduino} Framework, \textbf{LTspice}, \textbf{Xilinx Vivado}, Proteus, and \textbf{MATLAB \& Simulink} (Basics), MySQL.
     \item \textbf{Linux \& DevOps:} \textbf{Git} workflow; Daily-driving \textbf{Linux} for $>$5 years across \textbf{Debian} (current), Ubuntu, Fedora, and Arch; experienced in VM management, manual SSD/HDD partitioning, Ventoy, and Balena Etcher.
     \item \textbf{MATLAB Academy (Online Summer Internship):} \hfill \textit{Jun 2025}
     \begin{itemize}
