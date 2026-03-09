@@ -55,15 +55,15 @@
 \vspace*{-10pt}
 \begin{center}
     {\Huge \textbf{Aaromal A.}}\\
-    \vspace{5pt}
+    \vspace{8pt}
     Kochi, India $\cdot$ aaromalonline@gmail.com $\cdot$ \href{https://www.linkedin.com/in/aaromalonline/}{https://www.linkedin.com/in/aaromalonline/} \\
-    \vspace{4pt}
+    \vspace{6pt}
     Self-taught Programmer $\cdot$ FOSS (GNU/Linux) $\cdot$ Electronics Engineering
 \end{center}
 \vspace*{-8pt}
 
 %==== Education ====%
-\vspace*{2mm}
+\vspace*{8mm}
 \header{Education}
 \textbf{\href{https://www.cbse.gov.in/}{Central Board of Secondary Education (CBSE)}} \hfill Kerala, 2022 -- 2024\\
 \textit{Higher Secondary Education, Mathematics and Computer Science} \hfill Grade: 94.6\%\\
@@ -74,17 +74,16 @@
 \textbf{\href{https://www.cusat.ac.in/}{Cochin University of Science \& Technology (CUSAT)}} \hfill Kerala, 2024 -- 2028\\
 \textit{B.Tech in Electronics \& Communication Engineering} \hfill CGPA: 8.96 (S2)\\
 \textbf{Major Coursework:} Analog Integrated Circuits, Digital System Design, Signals and Systems, Network Theory, Microprocessors \& Microcontrollers (8086, 8051), C programming \& Object-Oriented Programming (C++), Linear Algebra \& Transform Techniques, Numerical \& Statistical Methods, Calculus.
-\vspace*{4mm}
+\vspace*{6mm}
 
 %==== Research & Presentations ====%
 \header{Research \& Presentations}
-\textbf{\href{https://github.com/aaromalonline/ecometachip}{Ecometachip Mini: Low-Cost Dielectric Chemical Identifier}} \hfill \textit{New Delhi} \\
+\textbf{\href{https://github.com/aaromalonline/ecometachip}{Ecometachip Mini: Low-Cost, Eco-friendly, Dielectric Chemical Identifier}} \hfill \textit{New Delhi} \\
 \textit{\href{https://epapers2.org/apscon2026/ESR/paper_details.php?paper_id=6101}{Lecture Presentation, IEEE APSCON 2026 (Student Research Forum)}} \hfill \textit{Jan 2026}
 \begin{itemize} \itemsep 1pt
-    \item Designed a dielectric sensing system for preliminary identification of common liquids (water, ethanol, acetone, petrol) based on relative permittivity variation.
-    \item Integrated a biodegradable coir-rubber composite as the primary sensing element.
-    \item Developed a 100 MHz Hartley oscillator-based readout circuit featuring RF pickup and rectification.
-    \item Implemented LED-based visual classification to validate output voltage variations.
+    \item Designed a eco-friendly dielectric sensing system for preliminary identification of common liquids (water, ethanol, acetone, petrol) based on relative permittivity variation in a biodegradable coir-rubber composite as the primary sensing element.
+    \item Developed a 100 MHz Hartley oscillator-based readout circuit with RF pickup for magnetic field modulation proportional to variation in rel. permittivity of material with different liquids and precision rectifier for rectification in following stages.
+    \item Implemented LED-based RGB visual classification to validate output voltage variations (low cost).
     \item Simulated ideal behavior in \textbf{LTspice} by varying coupling constants and analyzed the sensitivity and repeatability of the sensor under variable environmental conditions (Humidity/Temp) using \textbf{Python (Pandas/Seaborn)}.
     \item Quantified environmental drift coefficients ($mV/\%RH$ and $mV/^\circ C$) to characterize sensor robustness and output consistency across variable ambient conditions.
     \item Prepared a detailed research paper using \LaTeX\ which got selected for IEEE APSCON'26.
@@ -96,13 +95,16 @@
 \vspace*{-6pt} \lineunder
 
 \textbf{\href{https://liberate-atcs.vercel.app/}{Liberate:ATCS - Adaptive Typing \& Control System}} \hfill \textit{Feb 2025 - Sep 2025}\\
-{\sl ESP32, C++, Python, Arduino IDE}
+{\sl ADXL345, TCRT5000 IR, ESP32, C++, Python, Arduino IDE}
 \begin{itemize} \itemsep 1pt
-    \item Developed a muscle-twitch-based communication system translating subtle facial/body movements into digital control signals.
-    \item Enabled hands-free operation of computer cursors, wheelchairs, and keyboards for individuals with limited mobility.
-    \item Received participation recognition at the \textbf{2025 SSCS Arduino Content}.
+    \item Implimented ADXL345 accelerometer (also TCTRT5000 IR sensor) as input modules to record muscle twitches as 3-axis accelerations, which are encoded into binary clicks using baseline calibration and filtering algorithms.
+    \item Data is sent serially/wirelessly via ESP32 to the Python application using I2C, where the user can control a keyboard interface using the decoded twitch clicks.
+    \item The PyQt5 interface provides a moving highlight bar which spans across the rows of a adaptive keyboard interface (incl QWERTY, SOS, Mobility, Speak Keys), allowing selection of rows and keys through muscle twitches.
+    \item  The decoded twitch signals can be used for various applications incl communication, mobility (used to move wheelchair in addition to a motor-contolller) etc.
+    \item Received participation recognition at the \textbf{2025 SSCS Arduino Content} and demonstrated the prototype on various local hardware hackathon panels.
 \end{itemize}
-\vspace*{1mm}
+\vspace*{2mm}
+\newpage
 
 \href{https://github.com/aaromalonline/cardiokey}{\textbf{CardioKey (ECGID) - Analog ECG Acquisition \& Biometrics}} \hfill \textit{Feb 2026 - Present}\\
 {\sl AD620, ESP32, Python/MATLAB, Scikit-learn}
@@ -129,7 +131,7 @@
 \href{https://github.com/aaromalonline/truevote}{\textbf{Truevote: Digital Voting System}} \hfill {\sl C++, Qt, SHA256 Hashing, CMake} \\
 Secure e-voting replacement for EVMs using OOP principles and SHA256 hashing to ensure data integrity.
 
-\vspace*{4mm}
+\vspace*{5mm}
 
 %==== Experience ====%
 \header{Experience}
