@@ -87,7 +87,7 @@
     \item Implemented LED-based RGB visual classification to validate output voltage variations (low cost).
     \item Simulated ideal behavior in \textbf{LTspice} by varying coupling constants and analyzed the sensitivity and repeatability of the sensor under variable environmental conditions (Humidity/Temp) using \textbf{Python (Pandas/Seaborn)}.
     \item Quantified environmental drift coefficients ($mV/\%RH$ and $mV/^\circ C$) to characterize sensor robustness and output consistency across variable ambient conditions.
-    \item Prepared research paper using \LaTeX\ which got selected for lecture presentation under \href{https://epapers2.org/apscon2026/ESR/session_view.php?session_id=35}{Student Research Forum}, \textbf{\href{https://2026.ieee-apscon.org/}{IEEE APSCON'26} (IEEE Applied Sensing Conference)} by \href{https://ieee-sensors.org/}{IEEE Sensors Council} held at New Delhi, 23-25 Feb, 2026.
+    \item Prepared research paper using \LaTeX\ which got selected for lecture presentation under \href{https://epapers2.org/apscon2026/ESR/session_view.php?session_id=35}{Student Research Forum}, \textbf{\href{https://2026.ieee-apscon.org/}{IEEE APSCON'26} (IEEE Applied Sensing Conference)} by \href{https://ieee-sensors.org/}{IEEE Sensors Council} held at New Delhi, 23-25 Feb, 2026. (\href{https://www.researchgate.net/publication/401928480_Certificate_for_presentation}{ResearchGate presentation DOI})
 \end{itemize}
 \vspace*{2mm}
 
@@ -111,11 +111,11 @@
 \href{https://github.com/aaromalonline/cardiokey}{\textbf{CardioKey (ECGID) - Analog ECG Acquisition \& Biometrics}} \hfill \textit{Feb 2026 - Present}\\
 {\sl AD620, ESP32, Python/MATLAB, Scikit-learn}
 \begin{itemize} \itemsep 1pt
-    \item Engineered an \textbf{analog front-end} using the AD620 instrumentation amplifier and filter stages (Right-leg drive, Notch, butterworth) to acquire low-amplitude (~1mV) heart signals amplified 1000x in ~V range using amplifier stages.
+    \item Engineered an \textbf{lead-1 analog front-end} using the AD620 instrumentation amplifier and filter stages (Right-leg drive, Notch, butterworth) to acquire low-amplitude (~1mV) heart signals amplified 1000x in ~V range using amplifier stages.
     \item Digitally sampled the analog out in 300-500 Hz, 16 bit precision using 16 bit ADC(ADS1115) with DC offset circuit (Clamper) and Arduino UNO as a data pipe to the processing computer.
-    \item Digital signal undergoes segmentation, fragment selection extracting P-QRS-T feature space, then Principal Component Analysis (PCA) to compress 250-point cardiac windows into 30-point biometric "signatures" (\textbf{Feature space formation \& reduction}).
-    \item Achieved a 96\% identification accuracy using Linear Discriminant Analysis (LDA) with Nearest Mean and majority vote classifiers on 30 point signature per cardiac cycle across rest and exercise data acquired from public database. (\textbf{Classification \& Identification})
-    \item Featured inherent "Liveness Detection" to prevent biometric spoofing common in fingerprint or face ID systems.
+    \item Digital signal undergoes segmentation, fragment selection extracting P-QRS-T feature space, then Principal Component Analysis (PCA) to compress 250-point cardiac windows into 30-point biometric "signatures". (\textbf{Feature space formation \& dimensionality reduction})
+    \item Achieved a 96\% identification accuracy using Linear Discriminant Analysis (LDA) with Nearest Mean and majority vote classifiers on 30pt pca signature of 45 subjects (in ages 18-22) extracting 10 beats (P-QRS-T fragment) each, divided into 70-30 to train and predict, data acquired from public database. (\textbf{Classification \& Identification})
+    \item Featured inherent "Liveness Detection" to prevent biometric spoofing common in fingerprint or face ID systems and hence proved uniqueness of normalised P-QRS-T ecg fragment across people, age and heart rate variability.
 \end{itemize}
 \vspace*{2mm}
 
@@ -143,10 +143,11 @@
 %==== Experience ====%
 \vspace*{8mm}
 \header{Experience}
-\textbf{Software Intern} \hfill \textit{Mar 2025 -- Jul 2025} \\
+\textbf{Software Intern} \href{https://github.com/aaromalonline/aaromalanil_horizon_s2}{\textit{(works)}}\hfill \textit{Mar 2025 -- Jul 2025} \\
 \textit{\href{https://roverchallenge.eu/team/horizon-2024/}{Horizon Mars Rover Team, CUSAT}} \hfill \textit{Kochi, India}
 \begin{itemize}
-    \item Architected node communication for a functional Mars rover using \textbf{ROS 2 Humble} and \textbf{Arduino programming}.
+    \item Dual-booted \textbf{Ubuntu 22.04} by manual partitioning and setup \texttt{ros-humble-desktop-full} apt package.
+    \item Architected node communication for a functional Mars rover using \textbf{ROS 2 Humble} and \textbf{Arduino framework}, wrote simple subscriber \& publisher nodes and proximity alert system using them in \textbf{Python \& C++}.
     \item Performed circuit simulation using \textbf{TinkerCAD} and \textbf{Arduino} to program robotic arm joints using servo-motors.
     \item Wrote technical reports of the rover for upcomming IROC and ERC competitions using \LaTeX\
     \item Track record for qualifying AIR 26 on IRC26' and global rank 18 on ERC24' rover challenges including the \textbf{European Rover Challenge (ERC)} and \textbf{IROC by ISRO}, India.
@@ -155,10 +156,10 @@
 \textbf{Active Member} \hfill \textit{Mar 2025 -- Present} \\
 \textit{\href{https://fossunited.org/c/school-of-engineering-cusat}{FOSS CUSAT | Community}} \hfill \textit{Kochi, India}
 \begin{itemize}
-    \item Spearheaded the \textbf{Linux Installation Party} as part of the \textbf{Endof10 Campaign}, facilitating the migration and onboarding of 20+ students to open-source operating systems.
+    \item Spearheaded the \textbf{\href{https://www.linkedin.com/posts/aaromalonline_endof10-foss-activity-7418182178624126976-I1s4?}{Linux Installation Party}} as part of the \textbf{\href{https://endof10.org/}{Endof10 Campaign}}, facilitating the migration and onboarding of 20+ students to open-source operating systems.
     \item Provided hands-on technical guidance on \textbf{manual disk partitioning}, Secure Boot configurations, and shell workflows across distributions including Debian, Arch, Fedora, and Pop!\_OS.
     \item Demonstrated proficiency in deployment tools like \textbf{Ventoy} and \textbf{Balena Etcher} to provision Linux environments on various hardware including external SSDs and live USBs.
-    \item Represented FOSS CUSAT at major networking events, including \textbf{Kochi FOSS meetups} and \textbf{IndiaFOSS 2025} (Bengaluru), contributing to the regional growth of the free software community.
+    \item Represented FOSS CUSAT at major networking events, including \textbf{\href{https://kochifoss.org/}{Kochi FOSS Meetups}} and \textbf{\href{https://fossunited.org/indiafoss/2025}{IndiaFOSS 2025}} (Bengaluru), contributing to the regional growth of the free software community.
 \end{itemize}
 
 \textbf{Startup Founder | Founder Next Door (8-week mentorship program)} \hfill \textit{Oct 2025 -- Dec 2025} \\
