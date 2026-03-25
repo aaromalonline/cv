@@ -73,7 +73,7 @@
 \vspace{4mm}
 
 \textbf{\href{https://www.cusat.ac.in/}{Cochin University of Science \& Technology (CUSAT)}} \hfill Kerala, 2024 -- 2028\\
-\textit{B.Tech in Electronics \& Communication Engineering} \hfill CGPA: 8.96 (S2)\\
+\textit{B.Tech in Electronics \& Communication Engineering} \hfill CGPA: 8.67 (S3)\\
 \textbf{Major Coursework:} Analog Integrated Circuits, Digital System Design, Signals and Systems, Network Theory, Microprocessors \& Microcontrollers (8086, 8051), C programming \& Object-Oriented Programming (C++), Linear Algebra \& Transform Techniques, Numerical \& Statistical Methods, Calculus.
 \vspace*{4mm}
 
@@ -109,13 +109,14 @@
 
 \vspace*{15mm}
 \href{https://github.com/aaromalonline/cardiokey}{\textbf{CardioKey (ECGID) - Analog ECG Acquisition \& Biometrics}} \hfill \textit{Feb 2026 - Present}\\
-{\sl AD8232 ECG \& ADS1115 ADC, Arduino UNO, Python/MATLAB, Numpy \& Scipy, Matplotlib, Scikit-learn}
+{\sl AD8232 ECG \& ADS1115 ADC, Arduino UNO, Python, Numpy \& Scipy, Matplotlib, Scikit-learn, Tkinter}
 \begin{itemize} \itemsep 1pt
     \item Engineered an \textbf{lead-1 analog front-end} using the AD620 instrumentation amplifier and filter stages (Right-leg drive, Notch, butterworth) to acquire low-amplitude (~1mV) heart signals amplified 1000x in ~V range using amplifier stages.
-    \item Digitally sampled the analog out in 300-500 Hz, 16 bit precision using 16 bit ADC(ADS1115) with DC offset circuit (Clamper) and Arduino UNO as a data pipe to the processing computer.
+    \item Digitally sampled the analog out in 300-500 Hz, 16 bit precision using 16 bit ADC(ADS1115) with DC offset circuit (Clamper) and Arduino UNO as a data pipe to the processing computer (\textbf{client-side architecture)}.
     \item Digital signal undergoes segmentation, fragment selection extracting P-QRS-T feature space, then Principal Component Analysis (PCA) to compress 250-point cardiac windows into 30-point biometric "signatures". (\textbf{Feature space formation \& dimensionality reduction})
     \item Achieved a 96\% identification accuracy using Linear Discriminant Analysis (LDA) with Nearest Mean and majority vote classifiers on 30pt pca signature of 45 subjects (in ages 18-22) extracting 10 beats (P-QRS-T fragment) each, divided into 70-30 to train and predict, data acquired from public database. (\textbf{Classification \& Identification})
     \item Featured inherent "Liveness Detection" to prevent biometric spoofing common in fingerprint or face ID systems and hence proved uniqueness of normalised P-QRS-T ecg fragment across people, age and heart rate variability.
+    \item Deployed a functional client-side testing environment featuring high-frequency Arduino sampling firmware and a custom \textbf{Tkinter-based interface} for real-time ECG recording and prediction. Architecting an edge-processing pipeline to migrate signal analysis from the client-side to Raspberry Pi/ESP32 platforms using \textbf{TinyML} for low-latency, on-device inference.
 \end{itemize}
 \vspace*{2mm}
 
