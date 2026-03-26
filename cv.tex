@@ -98,16 +98,14 @@
 \textbf{\href{https://liberate-atcs.vercel.app/}{Liberate:ATCS - Adaptive Typing \& Control System}} \hfill \textit{Feb 2025 - Sep 2025}\\
 {\sl ADXL345, TCRT5000 IR, ESP32, C++, Python, Arduino IDE}
 \begin{itemize} \itemsep 1pt
-    \item Implimented \textbf{ADXL345 accelerometer} (also \textbf{TCTRT5000 IR sensor}) as input modules to record muscle twitches as 3-axis accelerations, which are encoded into binary clicks using baseline calibration and filtering algorithms.
+    \item Implimented muscle-twitch decoding interface using \textbf{ADXL345 accelerometer} (also \textbf{TCTRT5000 IR sensor}) as input modules to record muscle twitches as 3-axis accelerations, which are encoded into binary clicks using baseline calibration and filtering algorithms.
     \item Data is sent serially/wirelessly via ESP32 to the \textbf{Python application} using I2C, where the user can control a keyboard interface using the decoded twitch clicks.
     \item The \textbf{PyQt5 interface} provides a moving highlight bar which spans across the rows of a adaptive keyboard interface (incl QWERTY, SOS, Mobility, Speak Keys), allowing selection of rows and keys through muscle twitches.
-    \item  The decoded twitch signals can be used for various applications incl communication, mobility (used to move wheelchair in addition to a motor-contolller) etc.
+    \item  The decoded twitch signals can be used for various applications incl communication, mobility (used to move wheelchair in addition to a motor-contolller) etc, aiming to assist people with ALS or paralysis.
     \item Received participation recognition at the \textbf{\href{https://sscs.ieee.org/education/sscs-arduino-contest/}{2025 IEEE SSCS Arduino Content}} and \textbf{\href{https://stridedesignathon.ieee-link.org/}{STRIDE Assitive Designation 2025}} (Social Technology \& Research for Inclusive Design Excellence) by \href{https://kdisc.kerala.gov.in/en/}{K-DISC} (Kerala Development and Innovation Strategic Council) documenting \textbf{\href{https://youtu.be/9NmNVjKmtew?si=vOsgkYYBrDFDhQ74}{video presentation}} and demonstration of the prototype.
 \end{itemize}
-\vspace*{2mm}
 \newpage
 
-\vspace*{15mm}
 \href{https://github.com/aaromalonline/cardiokey}{\textbf{CardioKey (ECGID) - Analog ECG Acquisition \& Biometrics}} \hfill \textit{Feb 2026 - Present}\\
 {\sl AD8232 ECG \& ADS1115 ADC, Arduino UNO, Python, Numpy \& Scipy, Matplotlib, Scikit-learn, Tkinter}
 \begin{itemize} \itemsep 1pt
@@ -115,8 +113,8 @@
     \item Digitally sampled the analog out in 300-500 Hz, 16 bit precision using 16 bit ADC(ADS1115) with DC offset circuit (Clamper) and Arduino UNO as a data pipe to the processing computer (\textbf{client-side architecture)}.
     \item Digital signal undergoes segmentation, fragment selection extracting P-QRS-T feature space, then Principal Component Analysis (PCA) to compress 250-point cardiac windows into 30-point biometric "signatures". (\textbf{Feature space formation \& dimensionality reduction})
     \item Achieved a 96\% identification accuracy using Linear Discriminant Analysis (LDA) with Nearest Mean and majority vote classifiers on 30pt pca signature of 45 subjects (in ages 18-22) extracting 10 beats (P-QRS-T fragment) each, divided into 70-30 to train and predict, data acquired from public database. (\textbf{Classification \& Identification})
-    \item Featured inherent "Liveness Detection" to prevent biometric spoofing common in fingerprint or face ID systems and hence proved uniqueness of normalised P-QRS-T ecg fragment across people, age and heart rate variability.
     \item Deployed a functional client-side testing environment featuring high-frequency Arduino sampling firmware and a custom \textbf{Tkinter-based interface} for real-time ECG recording and prediction. Architecting an edge-processing pipeline to migrate signal analysis from the client-side to Raspberry Pi/ESP32 platforms using \textbf{TinyML} for low-latency, on-device inference.
+    \item Featured inherent \textbf{"Liveness Detection"} to prevent biometric spoofing common in fingerprint or face ID systems and hence proved uniqueness of normalised P-QRS-T ecg fragment across people, age and heart rate variability.
 \end{itemize}
 \vspace*{2mm}
 
@@ -139,10 +137,11 @@
     \item Implemented \textbf{SHA-256 cryptographic hashing} for user authentication.
     \item Built an automated \textbf{build-and-run workflow} using \textbf{CMake and Makefiles} for Linux-based systems.
 \end{itemize}
-\vspace*{6mm}
+\vspace{10pt}
+\textbf{Other working projects \& interests :} Dynamic Temporal-Spatial Feature Fusion for Robust 4-Class EEG Movement Classification, Multi-Class EEG Classification of Actual and Imagined Movements, Heart Attack Risk Prediction using Retinal/ECG data, Hash based Antivirus (Malware) engine using YARA, Cryptography \& Stegnography, Cybersecurity \& Reverse Engineering (Systems).
 \newpage
+
 %==== Experience ====%
-\vspace*{8mm}
 \header{Experience}
 \textbf{Software Intern} \href{https://github.com/aaromalonline/aaromalanil_horizon_s2}{\textit{(works)}}\hfill \textit{Mar 2025 -- Jul 2025} \\
 \textit{\href{https://roverchallenge.eu/team/horizon-2024/}{Horizon Mars Rover Team, CUSAT}} \hfill \textit{Kochi, India}
