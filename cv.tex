@@ -59,7 +59,7 @@
     \vspace{8pt}
     Kochi, India $\cdot$ aaromalonline@gmail.com $\cdot$ \href{https://www.linkedin.com/in/aaromalonline/}{https://www.linkedin.com/in/aaromalonline/} \\
     \vspace{6pt}
-    Self-taught Programmer $\cdot$ FOSS \& Systems Software $\cdot$ Electronics Engineering
+    Electronics Engineering $\cdot$ AI/ML Research 
 \end{center}
 \vspace*{-8pt}
 
@@ -68,7 +68,7 @@
 \header{Education}
 \textbf{\href{https://www.cbse.gov.in/}{Central Board of Secondary Education (CBSE)}} \hfill Kerala, 2022 -- 2024\\
 \textit{Higher Secondary Education, Mathematics and Computer Science} \hfill Grade: 94.6\%\\
-\textbf{Coursework:} Python Programming, Database Management Systems (DBMS), Data Structures and Algorithms (DSA), Computer Networking, Statistics & Probability, Coordinate Geometry, Calculus.\\
+\textbf{Coursework:} Python Programming, Database Management Systems (DBMS), Data Structures and Algorithms (DSA), Computer Networking, Statistics \& Probability, Coordinate Geometry, Calculus.\\
 \textbf{Activities:} Kerala State Junior Meet Athlete, District Junior Athletic Meet Medalist, School Cadre Group Leader.
 \vspace{4mm}
 
@@ -89,6 +89,14 @@
     \item Quantified environmental drift coefficients ($mV/\%RH$ and $mV/^\circ C$) to characterize sensor robustness and output consistency across variable ambient conditions.
     \item Prepared research paper using \LaTeX\ which got selected for lecture presentation under \href{https://epapers2.org/apscon2026/ESR/session_view.php?session_id=35}{Student Research Forum}, \textbf{\href{https://2026.ieee-apscon.org/}{IEEE APSCON'26} (IEEE Applied Sensing Conference)} by \href{https://ieee-sensors.org/}{IEEE Sensors Council} held at New Delhi, 23-25 Feb, 2026. (\href{https://www.researchgate.net/publication/401928480_Certificate_for_presentation}{ResearchGate presentation DOI})
 \end{itemize}
+
+\textbf{Attention-Regularized Vision Transformer for Cloth-Agnostic Person Re-Identification.} \hfill \textit{Kottayam} \\
+\textit{Ongoing Research, \href{https://internship.iiitkottayam.ac.in/}{Institute Internship Programme}, IIIT Kottayam} \hfill \textit{May 2026 -- Present}
+\begin{itemize} \itemsep 1pt
+    \item Researching cloth-agnostic person re-identification (\textbf{CC-ReID, PU-ReID}) under \textbf{\href{https://scholar.google.com/citations?user=dGwfp0wAAAAJ&hl=en}{Dr.\ Sridhar Raj S}}, begun as a summer research internship under the IIITK Institute Internship Programme.
+    \item Writing, training, and evaluating \textbf{Vision Transformer (ViT-Base, PyTorch)} models with regularized attention to improve robustness to clothing changes.
+    \item Conducted multiple ablation studies, achieving improvements over current benchmark models on the task. Writing a journal paper out of it and in process on publishing on a journal.
+\end{itemize}
 \vspace*{2mm}
 
 %==== Featured Projects ====%
@@ -104,7 +112,6 @@
     \item  The decoded twitch signals can be used for various applications incl communication, mobility (used to move wheelchair in addition to a motor-contolller) etc, aiming to assist people with ALS or paralysis.
     \item Received participation recognition at the \textbf{\href{https://sscs.ieee.org/education/sscs-arduino-contest/}{2025 IEEE SSCS Arduino Content}} and \textbf{\href{https://stridedesignathon.ieee-link.org/}{STRIDE Assitive Designation 2025}} (Social Technology \& Research for Inclusive Design Excellence) by \href{https://kdisc.kerala.gov.in/en/}{K-DISC} (Kerala Development and Innovation Strategic Council) documenting \textbf{\href{https://youtu.be/9NmNVjKmtew?si=vOsgkYYBrDFDhQ74}{video presentation}} and demonstration of the prototype.
 \end{itemize}
-\newpage
 
 \href{https://github.com/aaromalonline/cardiokey}{\textbf{CardioKey (ECGID) - Analog ECG Acquisition \& Biometrics}} \hfill \textit{Feb 2026 - Present}\\
 {\sl AD8232 ECG \& ADS1115 ADC, Arduino UNO, Python, Numpy \& Scipy, Matplotlib, Scikit-learn, Tkinter}
@@ -118,31 +125,58 @@
 \end{itemize}
 \vspace*{2mm}
 
+\href{https://cerebralvalley.ai/e/google-deepmind-bangalore-hackathon/hackathon/gallery?project=81}{\textbf{Wake - On-Device AI Memory for Android}} \hfill \textit{Nov 2026}\\
+{\sl Kotlin, Jetpack Compose (Material 3), Gradle, Room (SQLite/FTS4), MediaPipe TextEmbedder, LiteRT-LM, Gemini API}
+\begin{itemize} \itemsep 1pt
+    \item Built a local-first, on-device AI agent that captures useful text from Android notifications and the visible screen via an \textbf{Accessibility Service} and \textbf{Notification Listener Service}, storing it in a single \texttt{MemoryEvent} table -- no screenshots or pixels are ever captured -- and answers user queries about what was seen or received.
+    \item Implemented an \textbf{agentic architecture}: \texttt{AgentReasoner} decides when to act, \texttt{CommitmentDetector} identifies user promises/intents from captured text, \texttt{ActionExecutor} executes actions, and \texttt{AgentEngine} orchestrates the perception $\to$ reasoning $\to$ action loop.
+    \item Used \textbf{MediaPipe TextEmbedder} for on-device embeddings and \textbf{LiteRT-LM} for on-device \textbf{Gemma4:E2B} inference, with the Gemini API as an optional cloud LLM, in a single-module, no-DI, privacy-first architecture.
+    \item Built at the \textbf{Google DeepMind $\times$ Cerebral Valley} hackathon (Bengaluru) using the latest Google AI stack (Gemini 3.5 Flash, Gemini Audio, GenMedia -- Omni, Nano Banana 2 Lite -- Interactions API/Antigravity, Gemma4); selected as one of the top 15-20 teams from 4,000+ applicants ($\sim$350 shortlisted).
+\end{itemize}
+\vspace*{2mm}
+
+\textbf{Digital Logic Gate IC Tester} \hfill \textit{2026 -- Present}\\
+{\sl AT89S52 (8051), Embedded C (SDCC/Keil C51), Arduino UNO, 16x2 LCD}
+\begin{itemize} \itemsep 1pt
+    \item Designing and building a low-cost microcontroller-based tester for verifying the functional operation of selected 74-series combinational logic ICs (\textbf{74LS00 NAND, 74LS02 NOR, 74LS04 NOT}), using an \textbf{AT89S52} 8051-family microcontroller as the central controller and a 14-pin ZIF socket to mount the Device Under Test (DUT).
+    \item Push buttons provide user input for IC/test selection, while a \textbf{16x2 LCD} displays the selected IC and test status.
+    \item Firmware applies the required input combinations, reads the corresponding outputs, and compares them against truth-table values stored in firmware to indicate pass/fail of the DUT.
+    \item Validated the circuit through simulation before implementing on perfboard; firmware developed in \textbf{Embedded C} (SDCC or Keil C51) with an Arduino UNO used as the programming interface for the AT89S52.
+\end{itemize}
+\vspace*{2mm}
+
 \href{https://github.com/aaromalonline/PassCrypt}{\textbf{PassCrypt - Password Manager}} \hfill \textit{2022}\\
 {\sl Python, SQLite3}
 \begin{itemize}
-    \item Developed a robust password management application utilizing \textbf{SQLite} for secure local database storage.
-    \item Implemented secure \textbf{user authentication} and access control using advanced hashing techniques (\textbf{SHA256}) to protect sensitive user tables.
-    \item Integrated \textbf{cryptographic protocols} like \textbf{AES} using cryptography.fernet to ensure that all stored passwords remain encrypted and secure from unauthorized access.
-    \item Designed an \textbf{advanced filtering and search} interface, enabling users to efficiently sort and manage large lists of credentials.
-    \item Built a \textbf{Data Portability} feature allowing users to navigate entries and export/import entire password databases to a single file.
+    \item[] A local password manager built with \textbf{Python and SQLite} for secure credential storage, using \textbf{SHA-256} hashing for user authentication and \textbf{AES encryption} (via cryptography.fernet) to keep stored passwords secure. Includes an advanced search/filter interface and a data-portability feature for exporting/importing the entire credential database.
 \end{itemize}
 \vspace*{2mm}
 
 \href{https://github.com/aaromalonline/truevote}{\textbf{Truevote - Digital Voting System}} \hfill \textit{May 2025}\\
-{\sl C++, Qt, SHA256 Hashing, CMake}
+{\sl C++, Qt, SHA-256 Hashing, CMake}
 \begin{itemize}
-    \item Developed a cross-platform file based d-voting application using \textbf{C++ and Qt} to replace the electronic interface with digital one with more features aiming for a remote interface in future using server-client architecture.
-    \item Engineered an OOP-based \textbf{voter-admin architecture} creating seperate admin and voter panels to create/start poll, register voters, authentication and record votes in csv files, there by automating vote counting from csv file (\textbf{C++ file handling}).
-    \item Implemented \textbf{SHA-256 cryptographic hashing} for user authentication.
-    \item Built an automated \textbf{build-and-run workflow} using \textbf{CMake and Makefiles} for Linux-based systems.
+    \item[] A cross-platform digital voting application built with \textbf{C++ and Qt}, featuring an OOP-based admin/voter panel architecture for poll creation, voter registration, and authentication, with votes recorded and automatically tallied from CSV files. Uses \textbf{SHA-256} hashing for authentication and a \textbf{CMake}-driven build-and-run workflow for Linux.
 \end{itemize}
 \vspace{10pt}
-\textbf{Other working projects \& interests :} Dynamic Temporal-Spatial Feature Fusion for Robust 4-Class EEG Movement Classification, Multi-Class EEG Classification of Actual and Imagined Movements, Heart Attack Risk Prediction using Retinal/ECG data, Hash based Antivirus (Malware) engine using YARA, Cryptography \& Stegnography, Cybersecurity \& Reverse Engineering (Systems).
-\newpage
 
 %==== Experience ====%
 \header{Experience}
+\textbf{Technical Lead (R\&D AI/Robotics)} \hfill \textit{Jun 2026 -- Present} \\
+\textit{\href{https://www.teamsingularit.com/}{Team SingularIT, CUSAT}} \hfill \textit{Kochi, India}
+\begin{itemize}
+    \item Leading R\&D on autonomous systems as Technical Lead for \textbf{Team SingularIT}, a student team preparing an autonomous entry for \textbf{A2RL} autonomous racing.
+    \item Architected and developed the \textbf{perception subsystem} for the autonomous racing platform, running on an \textbf{NVIDIA Jetson} paired with an \textbf{STM32H743} ARM flight controller.
+    \item Designed the perception stack to rely solely on \textbf{IMU and vision} (no external localization aids), fusing visual and inertial data for real-time state estimation.
+\end{itemize}
+
+\textbf{AI Research Intern -- Person Re-Identification} \hfill \textit{May 2026 -- Present} \\
+\textit{\href{https://internship.iiitkottayam.ac.in/}{Indian Institute of Information Technology Kottayam (IIITK)}} \hfill \textit{Kottayam, India}
+\begin{itemize}
+    \item Conducting AI research under \textbf{Dr. Sridhar Raj S} on cloth-agnostic person re-identification (\textbf{CC-ReID, PU-ReID}), begun as a summer research internship under the Institute Internship Programme.
+    \item Working on regularizing the attention of \textbf{Vision Transformers (ViT-Base, PyTorch)} to improve robustness to clothing changes.
+    \item Wrote, trained, and evaluated vision models from scratch, running ablation studies that achieved improvements over current benchmark models. (\href{https://scholar.google.com/citations?user=dGwfp0wAAAAJ&hl=en}{Google Scholar})
+\end{itemize}
+
 \textbf{Software Intern} \href{https://github.com/aaromalonline/aaromalanil_horizon_s2}{\textit{(works)}}\hfill \textit{Mar 2025 -- Jul 2025} \\
 \textit{\href{https://roverchallenge.eu/team/horizon-2024/}{Horizon Mars Rover Team, CUSAT}} \hfill \textit{Kochi, India}
 \begin{itemize}
@@ -153,36 +187,46 @@
     \item Track record for qualifying AIR 26 on IRC26' and global rank 18 on ERC24' rover challenges including the \textbf{European Rover Challenge (ERC)} and \textbf{IROC by ISRO}, India.
 \end{itemize}
 
-\textbf{Active Member} \hfill \textit{Mar 2025 -- Present} \\
-\textit{\href{https://fossunited.org/c/school-of-engineering-cusat}{FOSS CUSAT | Community}} \hfill \textit{Kochi, India}
-\begin{itemize}
-    \item Spearheaded the \textbf{\href{https://www.linkedin.com/posts/aaromalonline_endof10-foss-activity-7418182178624126976-I1s4?}{Linux Installation Party}} as part of the \textbf{\href{https://endof10.org/}{Endof10 Campaign}}, facilitating the migration and onboarding of 20+ students to open-source operating systems.
-    \item Provided hands-on technical guidance on \textbf{manual disk partitioning}, Secure Boot configurations, and shell workflows across distributions including \textbf{Debian, Arch, Fedora, Ubuntu and Pop!\_OS}.
-    \item Demonstrated proficiency in deployment tools like \textbf{Ventoy} and \textbf{Balena Etcher} to provision Linux environments on various hardware including external SSDs and live USBs.
-    \item Represented FOSS CUSAT at major networking events, including \textbf{\href{https://kochifoss.org/}{Kochi FOSS Meetups}} and \textbf{\href{https://fossunited.org/indiafoss/2025}{IndiaFOSS 2025}} (Bengaluru), contributing to the regional growth of the free software community.
-\end{itemize}
-
 \textbf{Startup Founder | Founder Next Door (8-week mentorship program)} \hfill \textit{Oct 2025 -- Dec 2025} \\
 \textit{\href{https://iedccusat.vercel.app/}{IEDC CUSAT, }}{\href{https://cittic.cusat.ac.in/}{CITTIC}} \hfill \textit{Kochi, India}
 \begin{itemize}
-    \item Selected from a campus-wide pool of proposals for an intensive 8-week incubator focusing on market validation and MVP architecture.
-    \item Designed the \textbf{system architecture} and business logic for \href{https://dozyo.vercel.app/}{\textbf{Dozyo} (template website)}, a hyperlocal platform for student-led one-time and part-time gigs.
-    \item Developed a comprehensive \textbf{\href{https://aaromalonline.notion.site/Dozyo-1d91d429a96d80f18f9afc22c54f1637}{business plan (notion page)}} to replace informal job-sharing with structured digital workflows using telegram community, Airtable and escrow services.
-    \item Collaborated with industry founders on ideation, branding \& marketing, product life-cycle management, technical scalability etc on each week till the end of 8 weeks concluded with MVP presentation.
+    \item[] Selected from a campus-wide pool of proposals for an intensive 8-week incubator on market validation and MVP architecture. Designed the \textbf{system architecture} and business logic for \href{https://dozyo.vercel.app/}{\textbf{Dozyo}}, a hyperlocal platform for student-led gigs, and developed a comprehensive \href{https://aaromalonline.notion.site/Dozyo-1d91d429a96d80f18f9afc22c54f1637}{\textbf{business plan}} using Telegram community, Airtable, and escrow services to replace informal job-sharing with structured digital workflows. Collaborated weekly with industry founders on ideation, branding \& marketing, and technical scalability, concluding with an MVP presentation.
+\end{itemize}
+\vspace*{3mm}
+
+%==== Volunteering ====%
+\header{Volunteering}
+\textbf{Active Member} \hfill \textit{Mar 2025 -- Present} \\
+\textit{\href{https://fossunited.org/c/school-of-engineering-cusat}{FOSS CUSAT | Community}} \hfill \textit{Kochi, India}
+\begin{itemize}
+    \item[] Spearheaded the \textbf{\href{https://www.linkedin.com/posts/aaromalonline_endof10-foss-activity-7418182178624126976-I1s4?}{Linux Installation Party}} under the \textbf{\href{https://endof10.org/}{Endof10 Campaign}}, onboarding 20+ students to open-source operating systems with hands-on guidance on \textbf{manual disk partitioning}, Secure Boot configuration, and shell workflows across \textbf{Debian, Arch, Fedora, Ubuntu, and Pop!\_OS}, using deployment tools like \textbf{Ventoy} and \textbf{Balena Etcher}. Represented FOSS CUSAT at \textbf{\href{https://kochifoss.org/}{Kochi FOSS Meetups}} and \textbf{\href{https://fossunited.org/indiafoss/2025}{IndiaFOSS 2025}} (Bengaluru).
+\end{itemize}
+\vspace*{2mm}
+
+\textbf{Community Volunteer} \hfill \textit{2026 -- Present} \\
+\textit{\href{https://tinkerhub.org/tinkerspace}{Tinkerspace}, \href{https://tinkerhub.org/}{TinkerHub Foundation}} \hfill \textit{Kochi, India}
+\begin{itemize}
+    \item[] Host and actively engage in discussions at \textbf{Tinkerspace}, a local makerspace by TinkerHub, running \textbf{AI discussion sessions} and a \textbf{paper club}, mentoring at in-space hackathons like \textbf{Useless Projects}, and connecting with founders and fellow makers on their projects.
 \end{itemize}
 \vspace*{3mm}
 
 \header{Technical Skills \& Certifications}
 \begin{itemize} \itemsep 1pt
-    \item \textbf{Languages:} Proficient in \textbf{Python} (NumPy, SciPy, Matplotlib, Seaborn, Scikit-learn, Pandas, OpenCV, Requests, Selenium, SQLite), \textbf{C/C++}, \textbf{x86 asm}, HTML/CSS, JS, Bash (basic scripting), SQL, \LaTeX\, and Verilog.
-    \item \textbf{Tools \& Frameworks:} \textbf{ROS 2 Humble} (Basic Nodes), \textbf{Qt}, \textbf{Arduino} Framework, \textbf{LTspice}, \textbf{Xilinx Vivado}, Proteus, and \textbf{MATLAB \& Simulink} (Basics), MySQL.
-    \item \textbf{Linux \& DevOps:} \textbf{Git} workflow; Daily-driving \textbf{Linux} for $>$5 years across \textbf{Debian} (current), Ubuntu, Fedora, and Arch; experienced in VM management, manual SSD/HDD partitioning, Ventoy, and Balena Etcher.
+    \item \textbf{Cohere Labs Open Science Community ML Summer School '26} (Online):
+    \begin{itemize}
+        \item Attended sessions led by research scientists, PhD researchers, and mathematicians from \textbf{Meta Superintelligence Labs}, \textbf{Google DeepMind}, \textbf{Cohere Labs}, and \textbf{Liquid AI} on fundamental ML math, computer vision, and reinforcement learning.
+        \item Covered vector calculus and linear algebra foundations of ML algorithms, the evolution of computer vision from classical techniques to transformer-based and vision-language architectures, and value-based/policy-based reinforcement learning.
+    \end{itemize}
     \item \textbf{\href{https://matlabacademy.mathworks.com/?page=1&sort=featured}{MATLAB Academy} (Online Summer Internship):} \hfill \textit{Jun 2025}
     \begin{itemize}
         \item \href{https://www.credly.com/badges/5c9e05db-f4b5-4435-a360-226a04411a5e}{\textbf{MATLAB Proficiency:}} Core programming, algorithm development, and signal processing.
         \item \href{https://www.credly.com/badges/47d8690a-7a2d-4248-9c41-27fc8f8edc62}{\textbf{Data Analysis \& Processing:}} Visualization and AI/Machine Learning modules.
         \item \href{https://www.credly.com/badges/f69c1b8e-5a25-423f-9eba-db02fd2b6fb2}{\textbf{MATLAB for Simulink Users:}} System modeling, circuit simulation, and control logic.
     \end{itemize}
+
+    \item \textbf{Languages:} Proficient in \textbf{Python} (NumPy, SciPy, Matplotlib, Seaborn, Scikit-learn, Pandas, OpenCV, Requests, Selenium, SQLite), \textbf{C/C++}, \textbf{x86 asm}, HTML/CSS, JS, Bash (basic scripting), SQL, \LaTeX\, and Verilog.
+    \item \textbf{Tools \& Frameworks:} \textbf{ROS 2 Humble} (Basic Nodes), \textbf{Qt}, \textbf{Arduino} Framework, \textbf{LTspice}, \textbf{Xilinx Vivado}, Proteus, \textbf{PyTorch}, Kotlin/Jetpack Compose, and \textbf{MATLAB \& Simulink} (Basics), MySQL.
+    \item \textbf{Linux \& DevOps:} \textbf{Git} workflow; Daily-driving \textbf{Linux} for $>$5 years across \textbf{Debian} (current), Ubuntu, Fedora, and Arch; experienced in VM management, manual SSD/HDD partitioning, Ventoy, and Balena Etcher.
 \end{itemize}
 
 \end{document}
